@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Examen Mayo</title>
+</head>
+
+<body>
+  <header>
+    <h1>Examen mayo</h1>
+  </header>
+  <main class="container">
+
+    <form name="employee" class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationDefault01" value="" required>
+        <div class="invalid-feedback">This field is not valid.</div>
+        <div class="valid-feedback">ok.</div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationDefault02" value="" required>
+        <div class="invalid-feedback">This field is not valid.</div>
+        <div class="valid-feedback">ok.</div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault03" class="form-label">Age</label>
+        <input type="text" class="form-control" id="validationDefault03" value="" required>
+        <div class="invalid-feedback">This field is not valid.</div>
+        <div class="valid-feedback">ok.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault04" class="form-label">Job Title</label>
+        <input type="text" class="form-control" id="validationDefault04" value="" required>
+        <div class="invalid-feedback">This field is not valid.</div>
+        <div class="valid-feedback">ok.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault05" class="form-label">Location</label>
+        <input type="text" class="form-control" id="validationDefault05" value="" required>
+        <div class="invalid-feedback">This field is not valid.</div>
+        <div class="valid-feedback">ok.</div>
+      </div>
+      <div class="col-12">
+        <button type="button" id="create" class="btn btn-primary">Create</button>
+        <button type="button" id="random" class="btn btn-secondary">Get Random</button>
+      </div>
+    </form>
+
+    <div class="row my-3">
+      <table id="results" class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Full Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Job Title</th>
+            <th scope="col">Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vincent Williamson</td>
+            <td>31</td>
+            <td>iOS Developer</td>
+            <td>Washington</td>
+          </tr>
+          <tr>
+            <td>Joseph Smith</td>
+            <td>27</td>
+            <td>Project Manager</td>
+            <td>Somerville, MA</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button id="send" type="button" class="btn btn-primary w-100">Send</button>
+            </td>
+            <td>
+              <button type="button" id="delete" class="btn btn-secondary w-100">Delete</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="form-floating">
+        <textarea class="form-control" id="selected-employee" style="height: 200px"></textarea>
+        <label for="floatingTextarea">Selected employee</label>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/exam.js"></script>
+</body>
+
+</html>
